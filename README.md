@@ -17,10 +17,10 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-clone repo: `git clone https://github.com/netman5/webpack-linters-boilerplates.git`
+clone repo: `git clone git@github.com:selma-belhadj/leaderboard-setup.git`
 
 then
-`cd webpack-linters-boilerplates`
+`cd leaderboard-setup`
 
 ### Install
 
@@ -28,11 +28,11 @@ run `npm install` to install dependencies
 
 ## Authors
 
-👤 **Ola Ishola**
+👤 **Selma Belhadj**
 
-- GitHub: [@netman5](https://github.com/netman5)
-- Twitter: [@Orlaish](https://twitter.com/Orlaish)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ola-ishola/)
+- GitHub: [@selma-belhadj](https://github.com/selma-belhadj)
+- Twitter: [@Bel_Selma16](https://twitter.com/Bel_Selma16)
+- LinkedIn: [@selma-belhadj](https://www.linkedin.com/in/selma-belhadj/)
 
 ## 🤝 Contributing
 
@@ -52,4 +52,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+Thanks to [Ola](https://github.com/netman5) for this great webpack template.
+

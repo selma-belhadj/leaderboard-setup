@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/netman5/webpack-boilerplate.git"
+    "url": "git+git@github.com:selma-belhadj/leaderboard-setup.git" 
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/netman5/webpack-boilerplate/issues"
+    "url": "https://github.com/selma-belhadj/leaderboard-setup/issues"
   },
-  "homepage": "https://github.com/netman5/webpack-boilerplate#readme",
+  "homepage": "https://github.com/selma-belhadj/leaderboard-setup#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.5.1",
