@@ -26,6 +26,7 @@ then
 
 run `npm install` to install dependencies
 
+then run `npm start` to open the webpage on the browser 
 ## Authors
 
 👤 **Selma Belhadj**
