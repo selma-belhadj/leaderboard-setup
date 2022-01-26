@@ -4,6 +4,8 @@
 
 A starter boilerplate for projects in webpack and linters configs
 
+# Live demo
+See the live demo [here](https://selma-belhadj.github.io/leaderboard-setup/)
 ## Built With
 
 - HTML
