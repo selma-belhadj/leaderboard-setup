@@ -1,17 +1,18 @@
 {
   "name": "webpack",
   "version": "1.0.0",
-  "description": "",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack",
+    "Deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:selma-belhadj/leaderboard-setup.git" 
+    "url": "git+ssh://git@github.com/selma-belhadj/leaderboard-setup.git"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/selma-belhadj/leaderboard-setup/issues"
   },
-  "homepage": "https://github.com/selma-belhadj/leaderboard-setup#readme",
+  "homepage": "https://selma-belhadj.github.io/leaderboard-setup/",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.5.1",
@@ -38,6 +39,7 @@
     "webpack-dev-server": "^4.7.2"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "lodash": "^4.17.21"
   }
 }
