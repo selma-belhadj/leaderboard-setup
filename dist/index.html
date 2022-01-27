@@ -14,19 +14,22 @@
     <article>
       <div class="refresh-scores">
         <h2>Recent scores</h2>
-        <button type="button" id="refresh-btn">Refresh</button>
+        <button type="button" id="refresh">Refresh</button>
       </div>
+      <ul class="leaderboard"></ul>
       <div>
         <div id="scores"></div>
       </div>
     </article>
     <article class="add-score">
+      <form>
       <h2>Add your score</h2>
       <div class="input-scores">
-        <input id="username" placeholder="Your name" required />
-        <input id="user-score" placeholder="Your score" required />
+        <input id="username" name="name" placeholder="Your name" required />
+        <input id="user-score" name="score" type="number" placeholder="Your score" required />
         <input class="submit" id="submit" type="submit" value="Submit" />
       </div>
+      </form>
     </article>
   </div>
   <footer>

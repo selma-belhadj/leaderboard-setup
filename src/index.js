@@ -1,13 +1,45 @@
-// import _ from 'lodash';
 import './style.css';
 
-// function component() {
-//   const element = document.createElement('div');
+const leaderboard = document.querySelector('.leaderboard');
+const leaderForm = document.querySelector('form');
+const leaderName = leaderForm.querySelector('input');
+const leaderScore = leaderForm.querySelector('input[type="number"]');
 
-//   // Lodash, currently included via a script, is required for this line to work
-//   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+(() => {
+  leaderForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    fetch(
+      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/r9KSUi2ShOFoDajryYTb/scores',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          user: leaderName.value,
+          score: leaderScore.value,
+        }),
+      },
+    );
+    leaderForm.reset();
+  });
+})();
 
-//   return element;
-// }
+const refreshLeaderboard = async () => {
+  const response = await fetch(
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/r9KSUi2ShOFoDajryYTb/scores',
+  );
+  const scoreText = await response.text();
+  const score = JSON.parse(scoreText);
+  score.result.forEach((player) => {
+    leaderboard.innerHTML += `
+        <li>${player.user}:<span> ${player.score}</span></li>`;
+  });
+};
 
-// document.body.appendChild(component());
+document.getElementById('refresh').addEventListener('click', () => {
+  leaderboard.innerHTML = '';
+  refreshLeaderboard();
+});
+
+window.onload = refreshLeaderboard();
