@@ -12,11 +12,13 @@
   <h1>Leaderboard</h1>
   <div class="container">
     <article>
+      <section>
       <div class="refresh-scores">
         <h2>Recent scores</h2>
-        <button type="button" id="refresh">Refresh</button>
+        <button type="button" class="btn" id="refresh">Refresh</button>
       </div>
       <ul class="leaderboard"></ul>
+    </section>
       <div>
         <div id="scores"></div>
       </div>
@@ -27,16 +29,11 @@
       <div class="input-scores">
         <input id="username" name="name" placeholder="Your name" required />
         <input id="user-score" name="score" type="number" placeholder="Your score" required />
-        <input class="submit" id="submit" type="submit" value="Submit" />
+        <button class="submit btn" id="submit" type="submit">Submit</button>
       </div>
       </form>
     </article>
   </div>
-  <footer>
-    <div>
-      <p>Copyright Selma Belhadj</p>
-    </div>
-  </footer>
 </body>
 
 </html>
