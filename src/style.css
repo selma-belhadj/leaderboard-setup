@@ -1,3 +1,94 @@
 body {
-  background-color: bisque;
+  font-size: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.refresh-scores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-left: 10%;
+}
+
+#refresh {
+  margin-left: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 0.8rem;
+  background-color: transparent;
+  border: 2px solid black;
+  box-shadow: 4px 4px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #e9e8e8;
+}
+
+.btn:active {
+  background-color: #b9b9b9;
+}
+
+.leaderboard {
+  list-style: none;
+  padding: 0;
+  border: 3px solid black;
+  width: 25vw;
+}
+
+.leaderboard li {
+  padding: 0.7rem;
+}
+
+.leaderboard li:nth-child(even) {
+  background-color: #ddd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  margin-left: 60px;
+  width: 60%;
+  position: relative;
+}
+
+form h2 {
+  margin-bottom: 2.6rem;
+}
+
+form input {
+  border: 2px solid #000;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+}
+
+form input::placeholder {
+  color: #000;
+}
+
+.input-scores button {
+  position: absolute;
+  right: -10%;
+  bottom: -15%;
 }
